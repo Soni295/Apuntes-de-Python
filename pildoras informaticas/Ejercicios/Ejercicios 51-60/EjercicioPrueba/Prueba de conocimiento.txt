@@ -1,0 +1,53 @@
+Este es el desafio del video 59 del curso lo 
+hare con lo aprendido sin ver el video luego
+comparare resultados
+
+Crear una aplicación graficar de tipo CRUD
+estara conectada a una base de datos
+tendra que ser capas de realizar las operaciones
+basicar insertar, leer, actualizar y borrar
+registros en la base de datos
+
+El root debe tener
+  Menu 
+    BBDD(bien)
+      Conectar: Conectar crea la base de datos con mensaje de felicitacion
+        y si ya esta creada que la app controle la exepcion y advierta de esto
+      Salir: Muestra un cartel si queres salir de app
+    Borrar(bien)
+      Borrar campos: borrara todo lo puesto en los campo
+    CRUD(bien)
+      Tiene los mismo funcionamientos que los botones del frame 2
+    Ayuda(bien)
+      Licencia:poner informacion de licencia
+      Acerca de: Brebemente como funciona
+  Frame1
+    Labes y entry
+      Id: con el id poder buscar los datos(bien)
+      Nombre: el nombre tiene que ser rojo(bien)
+      Password: todos simbolos de pregunta "?"(bien)
+      Apellido(bien)
+      Direccion(bien)
+      Comentarios: Comentarios con barra de desplazamiento(bien)
+  Frame2
+    Botones(bien)
+      Create: para crear tabla(bien)
+      Read:buscarla en funcion del id(bien)
+      Update:modificar los datos en funcion del id(bien)
+      Delete: borrar en funcion del id(bien)
+
+  bd(bien)
+    ID INTEGER AUTOINCREMENT
+    NOMBRE_USUARIO VARCHAR(50)
+    PASSWORD VARCHAR(50)
+    APELLIDO VARCHAR(10)
+    DIRECCION VARCHAR(50)
+    COMENTARIOS VARCHAR(100)
+
+
+
+
+
+
+
+

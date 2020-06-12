@@ -1,0 +1,5 @@
+El comienzo del texto
+Es un estupendo dia para estudiar Python
+el miercoles
+siempre es una buena oportunidad para estudiar
+Y este es el final del archivo

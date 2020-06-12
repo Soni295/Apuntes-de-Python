@@ -1,0 +1,11 @@
+Estos son apuntes y practicas que he aprendido
+a lo Largo del curso de Programacion en Python de
+pildoras informaticas en youtube
+es un curso con aproximadamente de 20 hrs.
+Que explica variables, POO, excepciones,
+funciones de orden superior, creacion de app, con librerias 
+entre muchas cosas.
+https://www.youtube.com/watch?v=G2FCfQj-9ig&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS
+dejo el link. Por si gustan ver de que va.
+Lo anoto esto para tener un registro de lo que voy aprendido
+en este mundillo de la programacion

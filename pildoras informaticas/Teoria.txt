@@ -1,0 +1,1029 @@
+20:24:59 duracion total del curso
+
+
+
+Vid 1
+  
+  Temario
+    Introducción. Requisitos previos. Instalación software.
+    Fundamentos y sintaxis básica del lenguaje.
+    POO con Python.
+    Algoritmos, listas y tramos.
+    BBDD.
+    Trabajos con gráficos y contenidos.
+    Procesos y tareas.
+    Programación de red. Sockets.
+    Ejercicios prácticos.
+
+Vid 2
+  
+  Historia de Python y características de Python.
+  Requisitos de Hardware e instalación de Python.
+  IDE a utilizar.
+
+  Características
+    Creado por Guido Van Rossum a comienzos de los 90
+    Lenguaje de alto nivel. Gramática sencilla, clara, muy legible.
+    Tipado dinámico y fuerte.
+    Orientado a objetos.
+      Sobrecarga de constructores. Herencia múltiple. Encapsulación. Interfaces. Polimorfismo.
+    Open Sourse
+    Fácil de aprender.
+    Librería estándar muy amplia.
+    Interpretado.
+    Versátil.
+      Aplicaciones de escritorio, aplicaciones web y aplicaciones de servidor.
+    Multiplataforma
+    
+    Lenguaje de alto nivel.
+      se caracterizan por expresar los algoritmos de una manera mas adecuada para la lectura humana.
+      esto tiene una ventaja a la hora de programar porque mejora la lectura del desarrollador, pero
+      al no ser del estilo mas cercano al código maquina este necesitara compilarse o se interprete
+      haciendo que se vuelva mas lento su funcionamiento.(Python es interpretado).
+    Tipado dinámico.
+      Es cuando el lenguaje sabe diferencia los distintos tipos de valores que puede tomar una variables
+      (no hay que decirle que tipo de datos van a ser asignados a las variables).
+    POO o Programación orientada a objetos.
+      Es un paradigma de programación que innova la forma de obtener resultados.
+      Los objetos manipulan los datos de entrada para la obtención de datos de salida específicos, donde
+      cada objeto ofrece una funcionalidad especial.
+      Estos tiene varias técnicas basadas del sexenio: herencia, cohesión, abstracción, 
+      polimorfismo, acoplamiento y encapsulamiento.
+    Interpretado.
+      Es aquel que el código se ejecuta directamente, instrucción a instrucción. Esto hace
+      que se tenga que "traducir" cada vez que se ejecute haciéndolo mas lento en el tiempo de ejecución
+    Multiplataforma
+      osea se pueden usar programas creados en python tanto en windowns, linux y mac.
+
+  Requisitos mínimos
+    2 gb de ram
+    10gb de disco duro
+
+Vid 3 (Ejercicio001)
+
+  IDLE Python.
+  Primeras instrucciones en Python.(Ejercicio001)
+  Instalacion de Sublime Text 3.  
+    
+  Primeras instrucciones en Python.
+    los 3 mayores (>>>) es el prompt donde se introducen las instrucciones python.
+    >>>print("Hola Alumnos")<- esto se denomina una instrucción
+    en python cuando termina una línea de código termina la instrucción (no necesita ";")
+    De igual manera se pueden dar varias intrucciones en una línea de código aunque esto no
+    es recomendado por que afectar a la hora de entender el código, esto se puede si se usar ;
+    Los comentarios se introducen usando la almohadilla "#"
+    la "\" barra invertida sirve para hacer saltos de línea
+    También es importante la identación
+
+Vid 4(Ejercicio002)
+  
+  Tipos, operadores y variables.
+
+  Tipos
+    Numéricos
+      Enteros(int)
+      Coma flotante(float)
+      Complejos
+    Textos
+    Booleanos
+      True
+      False
+
+  Operadores
+    Aritméticos
+      (+)  Suma
+      (-)  Resta
+      (*)  Multiplicación
+      (/)  División
+      (//) División(Entera)
+      (%)  División(modulo(resto))
+      (**) Exponente
+    Comparación
+      (==) Igual que
+      (!=) Diferente que
+      (>)  Mayor que
+      (<)  Menor que
+      (>=) Mayor o igual que
+      (<=) Menor o igual que
+    Lógicos
+      AND
+      OR
+      NOT
+    Asignación
+      (=) Igual
+      (+=) Incremento
+      (-=) Decremento
+      (*=) 
+      (/=)
+      (//=)
+      (%=)
+      (**=)
+    Especiales
+      IS
+      IS NOT
+      IN
+      NOT IN
+
+  Variable
+    Es espacio en la memoria del ordenador donde se almacenará
+    un valor que podrá cambiar durante la ejecución del programa.
+
+  Python es 100% orientado a objetos por que hasta las variables son objetos
+  se puede usar la triple comilla para hacer saltos de línea
+
+Vid 5(Ejercicio003)
+  
+  Funciones
+    
+    Que son
+    Utilidad
+    Sintaxis
+    Ejecución
+
+  ¿Que son?
+    
+    Son un conjunto de líneas  de código agrupadas(bloque de código) que
+    funcionan como una unidad realizando una tarea específica.
+
+    Las funciones en Python pueden devolver valores.
+
+    Las funciones en Python pueden tener parámetros/argumentos.
+
+    A las funciones también se las denomina "Métodos" cuando se encuentran 
+    definidas dentro de una clase.
+
+  Utilidad
+
+    Reutilización de código(cuando sea necesario)
+  
+  Sintaxis
+
+    def nombre_función(parámetros):
+      instrucción de la función
+      return (opcional)
+
+    nombre_funcion(parámetros)<-así se ejecuta puede o no llevar parámetros
+  
+  Dato()
+    Los archivos de python se pueden guardar con un editor de texto plano
+    la terminación del archivo tiene que ser ".py"
+
+Vid 6(Ejercicio004) funciones
+
+  Funciones
+    paso de parámetros
+
+  Si cuando creo la función digo que necesita argumentos
+  me veré obligado a cada vez que la llame pasarle argumentos
+  a no ser que pongas que un parámetro es por defecto, en caso
+  cual este valor se asignara siempre, que no se le asigne otro valor
+  
+  Ejemplo:
+    def sum(num1, num2 = 0):
+      result= num1 + num2
+      print(result)
+
+    sum(4,5)#9
+    sum(4)#4
+  
+  el return es lo que devolvería la función después de terminar el Procesos
+
+  python funciona por referencias
+
+Vid 7(Ejercicio005) listas
+
+  Listas ¿Que son?
+    Estructuras de datos que nos permiten almacenar gran cantidad de valores
+    (equivalente a los arrays en otros lenguajes de programación)
+
+    En Python las listas pueden guardar diferentes tipos de valores
+    (en otros lenguajes no ocurre esto con los arrays).
+    
+    Se pueden expandir dinámicamente añadiendo nuevos elementos
+    (otra novedad respecto a los arrays en otros lenguajes)
+
+  Sintaxis
+    nombre_de_lista=[elem1,elem2,elemt3...]
+  
+  Dato():
+    El índice es la posición de los elementos en la lista y arranca del numero 0
+    que sería la primera posición.  
+  
+    Ej:
+      Lista=["¿","hola", "como", "Estas","?"]
+
+      Lista[0]<- "¿"
+      Lista[1]<- "hola"
+
+    algunos métodos
+      lista.append(elemt) agregar un elemento a la lista    
+      lista.insert(índice,elemt) agregar un elemento a la lista en el índice elegido
+      lista.extend([otra lista]) permite sumarle otra lista a la lista
+      lista.index(elemt) me permite saber el índice de un elemento
+      lista.remove(elemt) con esto remueve un elemento de la lista
+      lista.pop() elimina el ultimo elemento en una lista
+      elemt in lista esto devuelve true si existe el elemento en la lista
+      lista3=lista1+lista2 también se pueden sumar listas 
+      lista=[elemt1,elemt2,elemt3]*3 esto hará que los elementos se repitan 3 veces
+
+Vid 8(Ejercicio006) tuplas
+
+  Las tuplas
+
+    las tuplas son listas inmutables, es decir, no se pueden modificar
+    después de su creación
+      No permiten añadir, eliminar, mover elementos, ect
+      (no append, extend, remove).
+      Si permiten extraer porciones, pero el resultado de la extracción
+      es un tupla nueva.
+      Si permiten comprobar si un elemento se encuentra en la tupla.
+
+    ¿Que utilidad o ventaja tienen respecto a las listas?
+
+      Mas rápidas en el momento de la ejecucion
+      Menos espacio(mayor optimización)
+      Formatean Strings
+      Pueden utilizarse como claves en un diccionario.(las listas no).
+
+    Sintaxis
+      nombreTupla=(elem1,elem2,elem3)
+
+  Dato()
+    
+    miLista=list(tupla) se utiliza para convertir una 
+      tupla en lista y almacenarla en una variable
+
+    miTupla=tuple(lista) se utiliza para convertir una 
+      lista en tupla y almacenarla en una variable
+
+    miTupla.count(elemt) cuenta la cantidad de veces se
+      encuentra ese elemento (funciona en listas tambien)
+
+    len(miTupla) me devuelve la cantidad de elementos que
+      hay en la tupla
+
+    miTupla=(elem1,)Necesita si o si una coma cuando la
+      tupla tiene un solo elemento sino la transforma 
+      en lista
+
+    miTupla=elem1, elem2, elem3 asi sin parentecis
+      tambien se declara una tupla a esto se le llama
+      empaquetado de tupla
+
+    var1,var2,var3=miTupla se le asigna a las variables los
+      valores correspondientes al el orden en la tupla
+
+Vid 9(Ejercicio007) Diccionarios
+  
+  Los diccionario
+    
+    ¿Que son los diccionarios?
+      
+      Son estructuras de datos que nos permiten almacenar
+      valores de diferentes tipo(enteros, cadenas de texto, decimales
+      e incluso listas y otros diccionarios).
+
+      La principal característica de los diccionarios es que los datos
+      se almacenan asociados a una clave de tal forma que se crea una
+      asociación de tipo clave:valor para cada elemento almacenado.
+
+      Los elementos almacenados no están ordenados. El orden es
+      indiferente a la hora de almacenar la información en un diccionario.
+
+  Sintaxis
+    miDiccionario={clave1:valor1, clave2:valor2}
+
+  Dato()
+    miDiccionario[clave]=valor con esto se puede crear un nuevo elemento
+      al diccionario o modificar uno si es que ya existia esa clave
+    
+    del miDiccionario[clave] elimino la clave y su valor
+
+    miTupla=[elem1,elem2,elem3]
+    miDiccionario={miTupla[0]:val1,miTupla[1]:val1,miTupla[2]:val1,miTupla[3]:val1}
+      Se le puede asignar elementos de una tupla como claves
+    
+    miDiccionario.keys() devuelve todas las claves del diccionario
+
+Vid 10(Ejercicio008) Condicionales
+  Condicionales
+    instrucción IF
+      Modifica la lectura de un bloque de codigo
+      especifico si se cumple la condicion se lee, 
+      caso contrario se lo salta.
+      
+    Sintaxis
+      if condicion:
+        accion1
+      accion2
+      
+      si la condicion es verdadera se ejecutaran
+      las dos acciones pero si es falsa solo la segunda.
+    
+    Dato()
+      input(mensaje por consola) es para ingresar valores por consola pero
+      todo valor ingresado entrara como un str
+
+Vid 11(Ejercicio009) Condicionales if,elif,else
+  
+  Condicionales
+    instrucciones if, else y elif
+      if si es verdad ejecutar
+      elif o si este es verdad ejecutar
+      else si los anteriores no son verdad ejecutar
+
+Vid 12(Ejercicio010 y 011) Operadores
+  Condicionales
+    Switch ¿Switch? (python no tiene switch)
+    Concatenación de operadores de Comparación
+    Operadores logicos "and" y "or"
+    Operador "in"
+
+Vid 13(Ejercicio012 y 013) and ,or ,in
+  
+  Dato() Sigue lo del video 12
+
+Vid 14(Ejercicio014) Bucles o ciclos for
+  
+  ¿Que es un bucle?
+    Es una secuencia en programacion que ejecuta
+    repetidas veces por una instrucción o un trozo
+    de codigo. hasta que la condicion asignada al
+    bucle deje de cumplirse. Lo bucles se pueden
+    separa en dos tipos. Los determinados y los 
+    indetermianados.
+
+  Determinado
+    se ejecuta un número determinado de veces.
+    Se sabe cuantas veces se va a repetir.
+
+  Indeterminado
+    Se ejecuta un numero indeterminado de veces.
+    No se saber cuantas veces se va a repetir.
+    El número de veces que se ejecutará dependerá
+    de las circunstancias durante la ejecución del
+    prograna.
+  
+  Sintaxis
+    for variable in elementos a recorrer(lista,tupla,texto):
+      ejecucion
+
+Vid 15(Ejercicio015) Bucles for contador
+  Mas Ejercicios
+    Verificador email
+
+Vid 16(Ejercicio016) Bucle for range
+  Mas Ejercicios 
+  Tipo range
+  Notaciones especiales con print
+    print(f"string {variable} string") esto permite meter
+    variables dentro de strings
+
+Vid 17(Ejercicio017 y 018) Bucle while
+  
+  Dato()
+    el bucle while es un bucle indeterminado
+    puede ser infinito si no se controla
+  
+  Sintaxis
+    while condición:
+      cuerpo del bucle
+      cuerpo del bucle
+      cuerpo del bucle
+    fuera del bucle
+
+Vid 18(Ejercicio019) bucle continue, pass, else
+  
+  Continue cuando el programa ejecuta esta linea 
+  el bucle se saltea todo lo que este abajo de el
+  y vuelve a empezar
+  
+  Pass se usa cuando se quiere que el bucle devuelva
+  null
+
+  Else funcion de igual manera que en un condicional
+
+Vid 19(Ejercicio020) generadores
+  
+  ¿Que son?
+  
+    Son estructuras que extraen valores de una funcion
+    y se almacenan en objetos iterables.
+    (Que se pueden recorrer).
+    Estos valores se almacenaran de uno en uno.
+    Cada vez que un generador almacena un valor, este
+    permanece en un estado pausado hasta que es solicitado
+    el siguiente. Esta caracteristica es conocida como "suspencion de estado".
+  
+  ¿Como funcionan?
+  
+    a diferencia de las funciones devuelve un valor
+    y queda almacenado para que cuando se ejecute de vuelta
+    devuelva el siguiente
+  
+  ¿Que utilidad tienen?
+  
+    Son más eficientes que las funciones tradicionales.
+    Muy útiles con listas de valores infinitos.
+    Bajo determinados escenarios, será muy útil que un generador.
+    devuelva los valores de uno en uno.
+  
+  ¿Cual es su sintaxis?
+    def numeroGenerador():
+      yield numeros
+
+Vid 20(Ejercicio021) generadores
+  Nueva instrucción
+    yield from
+    simplifica el codigo
+  Sintaxis
+    def miGeneradors():
+      yield
+
+Vid 21(Ejercicio022) excepciones try except 
+
+  ¿Que son?
+    Las excepciones son errores que ocurren
+    durante la ejecución del programa. La
+    sintaxis del código es correcta pero 
+    durante la ejecución ha ocurrido "algo inesperado".
+    Este tipo de errores de ejecución se pueden controlar
+    para que la ejecución del programa continúe. Es lo 
+    que se conoce como manejo o control de excepciones.
+
+Vid 22(Ejercicio022 y 023) excepciones 
+  
+  Captura de varias excepciones
+  Cláusula finally
+
+Vid 23(Ejercicio024 y 025) excepciones raise
+  
+  Lanzamiento de excepciones
+    intrucción raise
+    Cración de excepciones propias(Poo mas adelante)
+
+Vid 24 POO 
+  
+  ¿Que es la POO?
+    ventaja de este paradigma de la programación
+
+  2 formas de programar(paradigmas)
+    
+    Programación orientada a procedimientos
+    
+      ejemplos: Fortran, Cobol, Basic ect.
+    
+      Desventajas
+        
+        Unidades de código muy grandes en aplicaciones
+        complejas.
+
+        En aplicaciones complejas el código resultaba
+        dificil de descifrar.
+
+        Poco reutilizable.
+
+        Si existe fallo en alguna línea del codigo,
+        es muy probable que el programa caiga.
+
+        Aparición frecuented de código espagueti.
+
+        Dificil de depurar por otros programadores
+        en caso de necesidad o error.
+
+
+    Programación orientada a objetos (POO)
+      
+      ¿En que consiste?
+        Transladar la naturaleza de los objetos de la vida
+        real al código de programación.
+      
+      ¿Cuál es la naturaleza de un objeto de la vida real?
+        Los objetos tienen un estado, un comportamiento
+        (¿Que puede hacer?), y sus propiedades.
+      
+      Ejemplo: El objeto coche.
+        
+        ¿Cuál es el estado de un coche?
+          Un coche puede estar parado, 
+          circulamdo, aparcado, ect.
+      
+        ¿Qué propiedades tiene un coche?
+          Un coche tiene un color, un peso,
+          un tamaño, ect.
+
+        ¿Qué comportamiento tiene un coche?
+          Un coche puede arrancar, frenar,
+          Acelerar, girar, ect.
+
+      Objeto(auto)
+        Tiene propiedades(atributos):
+          Color
+          Peso
+          Alto 
+          Largo 
+        Tiene un comportamiento(¿Qué es capaz de hacer?)
+          Arrancar
+          Frenar 
+          Girar 
+          Acelerar
+
+      Lenguajes ejemplo: C++, Java, Visual.Net, ect.
+
+      Ventajas
+        
+        Programas divididos en "trozos", "partes",
+        "módulos" o "clases".(Modularización).
+        
+        Muy reutilizable. Herencia.
+
+        Si existe fallo en alguna línea del código, el 
+        programa continuará su funcionamiento.
+        Tratamiento de Excepciones.
+
+        Encapsulamiento.
+      Vocabulario de la POO
+        Clase.
+        Objeto.
+        Ejemplar de clase. Instancia de clase
+        Ejemplarizar una clase, Instanciar una clase,
+        Encapsulación.
+        Herencia.
+        Polimorfismo.
+ 
+Vid 25 POO
+  
+  Conceptos y Terminos de la POO
+
+  Clase
+    Modelo donde se redactan las caracteristicas
+    comunes de un grupo de objetos
+  
+  Ejemplar de clase
+    es el objeto que pertenece a una clase
+
+  Modularización
+    Se refiere cuando un codigo tiene varias clases
+
+  Encapsulación
+    que al esta dividido en modulos cada uno es independiente
+    y si uno falla no tirada todo el sistema
+    y las clases se conectan con metodos de acceso
+  
+  ¿Como se accede a las propiedades y comportamiento del objeto?
+    Propiedades del objeto desde el codigo(pseudocódigo):
+      miCoche.color="Rojo"
+      miCoche.peso=1500
+      miCoche.ancho=2000
+      miCoche.alto=900
+    Comportamientos del obj eto desde el codigo(pseudocódigo):
+      miCoche.arrancar()
+      miCoche.frenar()
+      miCoche.girar()
+      miCoche.acelerar()
+
+Vid 26(Ejercicio026) POO
+  Sintaxis
+    class Clase(): <- las clases se escriben con may.
+ 
+Vid 27(Ejercicio027( 026+ )) POO encapsulamiento Constructor
+  Mas Ejercicios
+  Constructor
+    Seria el que le aplica los valores por defecto
+    cuando se inializa un objeto en una clase
+
+    Sintaxis
+      def __init__(self):
+        self.propiedad1=valorx
+        self.propiedad1=valory
+        self.propiedad1=valorz
+
+  Estado Inicial
+  Encapsulación
+    Es para encapsular o proteger una propiedad que se 
+    intenta manipular desde fuera de la clase
+    
+    Sintaxis
+      self.__propiedad
+
+Vid 28(Ejercicio028( 027+ )) POO encapsulamiento de metodos
+  Encapsulación de metodos
+    ¿que es?
+      Es una de evitar que se puedan usar metodos fuera de
+      la clase
+    ¿por qué utilizar la encapsulación?
+      Para proteger metodos de manipulacion externa 
+
+Vid 29(Ejercicio029) POO herencia
+  ¿Que es y para que sirve?
+    Mediante la herencia es posible crear una 
+    clase a partir de otra clase padre, 
+    la cual herederá tanto sus propiedades 
+    o atributos como losmétodos de la misma.
+
+    Permite reutilizar codigo
+
+    Sintaxis
+      class claseHijo(clasePadre):
+        ect ect ect.
+
+Vid 30(Ejercicio030( 029+ )) POO herencia multiple
+  Herencia
+    En los ejercicios
+      Metodos de escritura.
+      Herencia simple y multiple
+
+Vid 31(Ejercicio031( 030+ ) y 032) POO super(), isinstance()
+  herencia
+    super()
+      super llama al metodo de la clase padre
+    isinstance()
+      sirve para saber si pertenece a una clase determinada
+      un objeto
+
+Vid 32(Ejercicio033) POO polimorfismo
+  Polimorfismo(muchas formas)
+    es cuando un objeto cambia de forma segun el contexto
+    en el que se utiliza
+
+Vid 33(Ejercicio034) Metodos de cadena
+  Metodos Str(Algunos)
+    upper()
+      Toda las letras pasan a mayusculas
+    lower()
+      Toda las letras pasan a minusculas
+    capitalize()
+      La primera letra pasa a mayuscula y las
+      demas a minuscula
+    count()
+      cuenta una letra o una cadena de letras
+    find()
+      representa el indice en la cual aparece
+      un caracter o un grupo de caracteres
+    isdigit()
+      dice si el str es numerico o no
+    isalum()
+      comprueba si es alfanumerico
+    isalpha()
+      comprueba si es alpha
+    split()
+      separa por palabras utilizando espacios
+      o lo que se le pase por parametros
+    strip()
+      borra los espacios sobrantes al principio y
+      al final
+    replace()
+      cambia una palabra o letra por otra
+    rfind()
+      lo mismo que find pero arrancando por el final como
+      referencia
+
+Vid 34(modulo >Ejercicio035 y 036) Modulos
+  ¿Que son los módulos?
+    Un archivo con extensión .py .pyc(Python compilado)
+    o archivo escrito en C para CPython, que posee su propio espacio
+    de nombres y que puede contener variables, funciones, 
+    clases e incluso otros módulos.
+  
+  ¿Para qué sirven?
+    Para organizar y reutilizar el código
+    (modularización y reutilización)
+
+  Dato()
+    python por defecto va a buscar el modulo en la
+    carpeta donde se encuentra el archivo o en su
+    defecto al syspath.
+    Para poder usar un modulo que no se encuentra en la
+    carpeta del archivo se usan paquetes.
+
+Vid 35(modulo2 > Ejercicio037) paquetes
+  ¿que son?
+    directorios donde se almacenarán módulos
+    relacionados entre si.
+
+  ¿Para qué sirven?
+    Para organiza reutilizable los modulos.
+
+  ¿Cómo se crea un paquete?
+    Tan sencillo como crear una carpeta con un
+    archivo __init__.py y esa carpeta se convertira
+    en un paquete
+  Sintaxis
+    from Nombre_paquete(carpeta).nombre_del_modulo import *
+
+Vid 36( setup ) paquetes distribuibles
+  Como crear paquetes distribuibles
+    Primero se debe crear un archivo
+    llamado setup.py este archivo va a tener
+    una descripcción del archivo que vamos a 
+    distribuir( tiene que estar mas abajo en el
+    arbol que los paquetes)
+
+    una vez creado usamos el cmd en la carpeta del
+    setup y ponermos "python setup.py sdist" y se crea
+    el paquete
+    lo que esta en dist es lo importante
+
+    luego si lo queremos instalar entramos en dist
+    y escribimos en la linea de comandos
+    "pip3 install nombredelpaquete"
+    para desinstalar un paquete ponemos pip3
+    unistall paquete calculos
+
+Vid 37(archivos > Ejercicio038) Archivos externos con io
+  Se va a usar el modulo IO
+  Objeto:persistencia de datos
+  Dos alternativas:
+    Manejo de archivos externos
+    Trabajo con BBDD
+
+  Fases necesarias para guardar información en archivos externos.
+    Creación
+    Apertura
+    Manipulación
+    Cierre
+    
+Vid 38(archivos > Ejercicio039 ( +038 )) Fichero externo
+  Puntero en un fichero
+  
+Vid 39(Serialización > Ejercicio040) Serialización
+  Serializar colecciones
+
+    Es para pasar objetos escritos en python con codigo
+    binario
+
+  Bibliotecas necesarias
+    Pickle
+      Método dump(): vuelva los datos a un fichero binario externo
+      Método load(): carga los datos del fichero binario externo
+
+Vid 40(Serialización > Ejercicio040a) Serialización objetos
+  serializar objetos
+
+Vid 41(Serialización > Ejercicio041) Serialización
+  Guardar info
+
+Vid 42(Ejercicio042) Interfaz grafica
+  Interfaz grafica
+    a estos archivos se les suele
+    poner la terminacion .pyw(para que no abra la consola
+    durante su ejecucion)
+    
+    tkinter
+  
+    Interface grafica se denominan GUI, son intermediarios
+    entre el programa y el usuario.
+    Formadas por un conjunto de gráficos como
+    ventanas, botones, menús, casillas de verificación,ect.
+  
+  Librerías con las cuales trabajar para crear GUI:
+    tkinter
+    WxPython
+    PyQT
+    pyGTK
+
+  tkinter es un "puente" entre python y la
+  libreria TCL/Tk
+
+  Estructuras
+    Raiz(tk)
+      Frame
+        widget1
+        widget2
+        widget3
+
+Vid 43(Ejercicio043( +042 )) Interface grafica frames
+  Mas ejercicios
+
+Vid 44(Ejercicio000) Interface grafica label
+  Ejercicios
+  
+  ¿que es un label?
+    wigets utilizados para mostrar texto o
+    imágenes.
+
+    Tienen como única finalidad
+    mostrar texto, no se puede
+    interactuar con él(borrar, arrastrar, ect)
+
+  sintaxis
+    variable=label(contenedor, opciones)
+
+  opciones
+    
+    Text
+      Texto que se muestra en el label
+    Anchor
+      Controla la posición del texto si hay
+      espacio suficiente para el(center por defecto)
+    Bg
+      Color del fondo
+    Bitmap
+      Mapa de bits que se mostrará como grafico
+    Bd 
+      Grosor del borde(2px por defecto)
+    Front 
+      Tipo de fuente a mostrar
+    Fg
+      Color de la fuente
+    Width
+      Ancho de Label en caracteres(no en pixeles)
+    Height
+      Alto de Label en caracteres(no en pixeles)
+    Imagen
+      Muestra imagen en el Label en lugar de texto
+    Justify
+      Justificación del texto Label
+
+Vid 45(Ejercicio045) Interface grafica Entry
+  Muchas de las opciones para los labels
+  son validas para los entry
+
+Vid 46(Ejercicio046( +045 )) Interface Graficas widgets text y Button
+  Text
+    es utilizado para meter texto Largo
+
+  Button
+    es para interactuar con la interfaz
+    
+Vid 47(Ejercicio047) Crear una calculadora
+  Diseño de lo visual
+
+Vid 48(Ejercicio048(+047)) Crea una calculadora
+  Funcionalidades
+
+Vid 49(Ejercicio049(+048)) Crear una calculadora
+  Funcion suma e igual
+
+Vid 50(Ejercicio050) Radiobuton
+  Botones de seleccion para una respuesta unica
+
+Vid 51(Ejercicio051) check buttons
+  Ejercicio
+  Es un boton para respuestas multiples
+
+Vid 52(Ejercicio052) Menus
+  Creacion de menus
+
+Vid 53(Ejercicio053(+052)) Ventanas emergentes
+  Crear ventanas emergentes
+
+Vid 54(Ejercicio054) Filedialog
+  Ejercicio de abrir archivos
+
+Vid 55(Ejercicio055) BBDD I
+  Base de datos
+    Creacion de BBDD
+      Conexion con BBDD
+      Inserción de registros en BBDD
+
+  Python y SGDB
+    SQL Server
+    Oracle
+    MySql
+    SQLite
+    PostgreSQL
+    Ect.
+
+  Para esto hay que conocer el lenguaje
+  Universal SQL para poder manipular base de datos
+
+  ¿Que es SQLite?
+    Sistema de gestión de BBDD relacional.
+    Escrito en C, es de código abierto.
+    Forma parte integral del programa.
+    Se guarda como un unico fichero en host.
+
+    Ventajas
+      Ocupa muy poco espacio en disco
+      y memoria.
+      Muy eficiente y rápido.
+      Multiplataformas.
+      Sin administración/Configuracion
+      Dominio público. Sin costo.
+
+    Desventajas
+      No admite clausulas anidadas(where).
+      No existen usuarios(no acceso 
+      simultáneo por parte de varios usuarios
+      a la vez).
+      Falta de clave foránea cuando se crea
+      en modo consola
+
+    Pasos a seguir para conectar con una BBDD
+      1. Abrir-Crear conexión
+      2. Crea puntero 
+      3. Ejecutar query(consulta) SQL 
+      4. Mantener los resultados de la query(consulta).
+        Insertar, Leer, Actualizar, Borrar(Create,Read,Update,Delete).
+      5. Cerrar puntero.
+      6. Cerrar conexión
+
+Vid 56(Ejercicio056(+055)) BBDD Insercion y recuperacion de registros
+  Ejercicios
+
+Vid 57(Ejercicio057) BBDD Claves principales en BBDD
+  Ejercicio crear registros con
+  Campo clave e insertar luego tablas en estos
+
+Vid 58(Ejercicio058 y 058b especial) BBDD Cláusula UNIQUE y Operaciones circulamdo
+
+Vid 59 Guia practica
+  Breve explicacion de como sera(Ejercicio terminado sin tutorial prueba de conocimiento.pyw)
+
+Vid 60 al 65(Ejercicio059) Guia practica
+  una app con CRUD
+
+Vid 66(Ejercicio060) funciones lambda(anonimas)
+  ¿Que son las funciones lambda y cual es su utilidad?
+    se usan para simplificar funciones sencillas, pero estan limitadas
+    por ejemplo no pueden hacer bucles por lo sencillo de su sintaxis
+
+  sintaxis
+    lambda parametro1, parametro2: expresion(los dos puntos son equivalentes al return) 
+
+Vid 67(Ejercicio061 y 062) funcion filter y unidad
+  función filter
+    Verifica que los elementos de una secuencia cumplen una condición,
+    devolviendo un iterador con los elementos que cumplen dicha condición
+  sintaxis
+
+    filter(funcion,lista) la funcion debe devolver true o false, el filter devuelve
+    un objeto asi que se usa list() para poderlo leer
+
+Vid 68(Ejercicio063) Map
+  funcion de orden superior Map
+    Aplica una función a cada elemento de una lista iterable(listas,tuplas,ect)
+    devolviendo una lista con los resultados
+
+    funciona como la filter pero te devuelve el return y lo guarda en una lista
+    y no como objeto
+
+Vid 69(Ejercicio064) Expreciones regulares
+  
+  ¿Que son las expreciones regulares?
+    Las expreciones regulares son una secuencia de caracteres
+    que forman un patron de busquda.
+  ¿Cual es su sintaxis?
+    Para el trabajo y pocesamiento de texto.
+  ejemplos
+    Buscar un texto que se ajusta a un 
+    formato determinado(correo electrónico).
+    Buscar si existe o no una cadena de 
+    caracteres dentro de un texto.
+    Contar el número de coincidencias dentro de un texto.
+    Etc.
+
+Vid 70(Ejercicio065) Metacaracteres(caracteres comodín)
+  Anclas y clases de caracteres
+    "[]",^,$
+
+Vid 71(Ejercicio066) expreciones regulares
+  rango
+
+Vid 72(Ejercicio067) Expreciones regulares
+  March y search
+
+Vid 73(Ejercicio068) Decoradores
+  Funcionamiento y sintaxis
+    ¿Que son?
+      Funciones que a su vez añaden funcionalidades a otras funciones.
+        Por eso se las denomina "Decoradores", porque "decoran" a otras
+        funciones.
+        Les añaden funcionalidades
+
+      Estructura de un decorador:
+        3 funciones (A, B, C) donde A recibe como parámetro
+        a B para devolver C.
+        Un decorador devuelve una función
+
+      def funcion_decorador(funcion):
+        def funcion_interna():
+          Codigo de la funcion funcion_interna
+        return funcion_interna
+
+Vid 74(Ejercicio069) decoradores con parametros
+  ejercicio
+
+Vid 75(Ejercicio070) Documentar un programa
+  ¿Qué es?
+    Incluir comentarios en clases, métodos, módulos, ect.
+
+  ¿Para qué?
+    Para ayudar en el trabajo en equipo. Especialmente útil
+    aplicaciones complejas
+
+Vid 76(Ejercicio071) pruebas de documentacion
+  modulo doctest
+
+Vid 77(Ejercicio072) pruebas de documentacion
+
+Vid 78(Ejercicio073) Creación de ejecutable
+  Final del curso
+  usar el comando pip install pyinstaller
+  luego cuando queres transformar en ejecutable el archivo
+  vas en el cmd a la carpeta del archivo y pones pyinstaller archivo.py
+  si qres q te aparesca sin consola es pyinstaller --windowed archivo.py 
+  pero este sigue necesitando q este python en el ordenador
+
+  para que lo compile en un archivo pyinstaller --windowed --onefile archivo.py
